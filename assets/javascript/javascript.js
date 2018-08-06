@@ -29,10 +29,10 @@ function displayGIFContent() {
         for (var i = 0; i < results.length; i++) {
 
             //creating a div to hold all gifs within the show
-            var showDiv = $("<div class='show float-left'>");
+            var showDiv = $("<div class='show d-inline-block'>");
 
             // Creating a div to hold the contents of each gif
-            var imageDiv = $("<div class='show text-center mt-2'>");
+            var imageDiv = $("<div class='show text-center mt-2 mr-2'>");
 
             // Storing the gif rating data
             var rating = results[i].rating;
@@ -79,8 +79,8 @@ function displayGIFContent() {
           // Then dynamically generating buttons for each show in the array
           // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
           var a = $("<button>");
-          // Adding a class of movie-btn to our button
-          a.addClass("show-btn btn btn-outline-light mr-2");
+          // Adding a class of show-btn to our button
+          a.addClass("show-btn btn btn-outline-light mr-2 mb-2");
           // Adding a data-attribute
           a.attr("data-name", showArray[i]);
           // Providing the initial button text
