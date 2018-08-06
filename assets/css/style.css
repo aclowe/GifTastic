@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+html,
+body {
+  background: rgb(21, 1, 37);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  
+}
+
+#title {
+  font-family: "Monoton", cursive;
+  font-size: 5em;
+  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #9f2064, #31a1e6);
+  -webkit-animation: gradient 40s ease infinite alternate;
+  -o-animation: gradient 40s ease infinite alternate;
+  -ms-animation: gradient 40s ease infinite alternate;
+  -moz-animation: gradient 40s ease infinite alternate;
+  -webkit-animation: gradient 40s ease infinite alternate;
+  animation: gradient 40s ease infinite alternate;
+  will-change: background-position, background-size;
+  background-size: 150%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50%, 50%;
+    background-size: 150%, 100px auto;
+  }
+  25% {
+    background-position: 0, 50%;
+  }
+  50% {
+    background-size: 400%, 100px auto;
+  }
+  75% {
+    background-position: 100%, 50%;
+  }
+  100% {
+    background-position: 50%, 50%;
+    background-size: 150%, 100px auto;
+  }
+}

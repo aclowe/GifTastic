@@ -5,44 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS reset -->
-    <link rel="stylesheet" type="text/css" src="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" src="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- jQuery Library -->
-    <title>Document Title</title>
+    <title>GIF Finder</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-primary">
-        <a class="navbar-brand">GIF Finder
-        </a>
+    <nav class="navbar">
+        <h2 id="title">GIF Finder</h2>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search for GIFs" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search
+                    <button class="btn btn-outline-light my-2 my-sm-0" id="searchButton" type="submit">Add Show
                     </button>
             </form>
     </nav>
-    <div class="container" id="buttonContainer">
+    <div class="container">
         <div class="row">
-            <div class="col-sm mt-2 text-center">
-                <button type="button" class="btn btn-outline-primary">Primary
+            <div class="col-sm-12 mt-2 mb-2 text-center" id="infoBar">
+                <strong>Find GIFs from your favorite shows!</strong><br>
+                Click a maximum rating, then click a show from the menu below. <br>
+                To add your own show to the menu, enter the name into the search area and click "Add Show."
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mt-2 text-center" id="ratingBar">
+                <button type="button" class="btn btn-info rating" data-rating="G">G</button>
+                <button type="button" class="btn btn-info rating" data-rating="PG">PG</button>
+                <button type="button" class="btn btn-info rating" data-rating="PG-13">PG-13</button>
+                <button type="button" class="btn btn-info rating"data-rating="R">R</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mt-2 text-center" id="buttonArea">
+                <button type="button" class="btn btn-outline-secondary">
                 </button>
             </div>
         </div>
     </div>
     <div class="container" id="gifContainer">
-            <div class="row gifArea">
-                <div class="col-sm mt-2 text-center">
+            <div class="row">
+                <div class="col-sm-12 mt-2 text-center" id="gifArea" style="color: white; justify-content: center">
                 </div>
             </div>
-        </div>
+    </div>
 
 <!-- javascript  -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/jquery.js"></script>
+<script src="assets/javascript/javascript.js"></script>
 
 </body>
 
